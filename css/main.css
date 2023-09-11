@@ -1,14 +1,138 @@
+body{
+    background-color: whites;
+}
+.questions {
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    width: 550px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto; 
+    backdrop-filter: blur(10px);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+    @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+}
+
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+[type=radio] { 
+    opacity: 0;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+
+}
+
+[type=radio] + img {
+    cursor: pointer;
+}
+
+img{
+    opacity: 0.4;
+}
+
+[type=radio]:hover + img{
+    opacity: 1;
+}
+
+[type=radio]:checked + img {
+    opacity: 1;
+}
+
+@keyframes moveOut {
+    0% {
+        left: 50%; 
+    }
+    100% {
+        left: -100%; 
+    }
+}
+
+@keyframes moveIn {
+    0% {
+        right: 50%; 
+    }
+    100% {
+        left: -100%; 
+    }
+}
+
+.animatedOut {
+    animation: moveOut 1.5s ease-in-out forwards;
+}
+
+.animatedIn {
+    animation: moveIn 1.5s ease-in-out forwards;
+}
+
+.move-right {
+   left: -100%;
+}
+
 .options{
     display: flex;
     flex-direction: row;
     gap: 25px;
-    color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.number {
+    font-size: 15px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 h1{
+    border: solid white 2px;
+    background: transparent;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #fff;
+    border-radius: 25px;
+}
+
+h2{
+    margin: 0px;
     text-align: center;
+    font-family: Inter var;
+    font-weight: 400;
+    font-size: 2rem;
+    max-width: 500px;
+}
+
+p{
+    font-weight: 90;
+    font-size: 18px;
 }
 .option-1, .option-2, .option-3, .option-4, .option-5 {
     display: flex;
@@ -19,7 +143,89 @@ h1{
 .buttons{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 200px;
 }
 
+#next-button-1,#next-button-2,#next-button-3, #next-button-4,#next-button-5,#next-button-6,#next-button-7,#next-button-8,#next-button-9,#next-button-10{
+    font-weight: bolder;
+    color: white;
+    background: transparent;
+    border: solid 2px white;
+    padding: 12px 35px 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  
+}
+
+#previous-button {
+    position: relative;
+    font-weight: bolder;
+    color: white;
+    background: transparent;
+    border: solid 2px white;
+    padding: 12px 24px 12px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+
+  }
+  
+  #previous-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    transform: rotate(180deg); 
+    
+  }
+  
+ 
+button:hover {
+    backdrop-filter: blur(10px);
+}
+
+button::after {
+    position: absolute;
+    content: '';
+    bottom: 9px;
+    left: 44%;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 1px;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+#previous-button::after {
+    position: absolute;
+    content: '';
+    bottom: 9px;
+    left: 56%;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 1px;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+button:hover::after {
+    width: 38%;
+}
+
+#previous-button:hover::after {
+    width: 40%;
+}
 
