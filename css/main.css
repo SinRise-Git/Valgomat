@@ -69,22 +69,13 @@ img{
     }
 }
 
-@keyframes moveIn {
-    0% {
-        right: 50%; 
-    }
-    100% {
-        left: -100%; 
-    }
-}
+
 
 .animatedOut {
     animation: moveOut 1.5s ease-in-out forwards;
 }
 
-.animatedIn {
-    animation: moveIn 1.5s ease-in-out forwards;
-}
+
 
 .move-right {
    left: -100%;
