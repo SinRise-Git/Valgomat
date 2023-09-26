@@ -1,6 +1,25 @@
 body{
     background-color: whites;
 }
+#progress-container {
+    width: 550px;
+    background: linear-gradient(-45deg, #121212, #222222, #222222, #121212);;
+    border-radius: 5px;
+}
+
+#progress{
+    width: 0;
+    padding-left: 5px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color:  white;
+    background: linear-gradient(-45deg, #121212, #222222, #222222, #121212);;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out; 
+}
+
+
 .questions {
     border: 1px solid white;
     border-radius: 5px;
@@ -10,9 +29,8 @@ body{
     display: flex;
     align-items: center; 
     justify-content: center; 
-    margin: 0 auto; 
     backdrop-filter: blur(10px);
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #121212, #222222, #222222, #121212);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
 }
@@ -28,7 +46,6 @@ body{
         }
 }
 
-
 .box{
     position: absolute;
     top: 50%;
@@ -39,17 +56,17 @@ body{
 [type=radio] { 
     opacity: 0;
     z-index: 1;
-    width: 35px;
-    height: 35px;
-
+    width: 55px;
+    height: 55px;
 }
+
 
 [type=radio] + img {
     cursor: pointer;
 }
 
 img{
-    opacity: 0.4;
+    opacity: 0.3;
 }
 
 [type=radio]:hover + img{
@@ -60,32 +77,10 @@ img{
     opacity: 1;
 }
 
-@keyframes moveOut {
-    0% {
-        left: 50%; 
-    }
-    100% {
-        left: -100%; 
-    }
-}
-
-
-
-.animatedOut {
-    animation: moveOut 1.5s ease-in-out forwards;
-}
-
-
-
-.move-right {
-   left: -100%;
-}
-
 .options{
     display: flex;
     flex-direction: row;
     gap: 25px;
-    color: white;
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
@@ -119,6 +114,12 @@ h2{
     font-weight: 400;
     font-size: 2rem;
     max-width: 500px;
+}
+
+.statement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 p{
@@ -219,4 +220,5 @@ button:hover::after {
 #previous-button:hover::after {
     width: 40%;
 }
+
 

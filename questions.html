@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/main.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Valgomat</title>
+ <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
- <div class="box"> 
-  <div class="questions"> 
+  <div class="box"> 
+   <div class="progress-bar">
+      <div id="progress-container">
+      <div id="progress">0%</div>
+    </div>
+   <div class="questions" style="display: block;"> 
     <div class="question-1">
      <div class="number">
         <h1>1</h1>
      </div> 
-    <h2>Skolefritidsordningen bør bli helt gratis i Bergen.</h2>
+    <div class="statement"> 
+     <h2>Vi må gjøre det lettere for flyktninger fra flere land enn Ukraina å komme til Norge</h2>
+    </div>  
     <div class="options">
      <div class="option-1">
        <label>
-         <input type="radio" name="1" value='{"Nothing": 0}'>
+         <input type="radio" name="1" value='{"H": 2, "FRP": 2}'>
          <img src="/img/helt-uenig.svg">
        </label>
        <p>Helt uenig</p> 
      </div>
      <div class="option-2">
        <label>
-         <input type="radio" name="1" value='{"H": 1, "V": 1, "KRF": 1}'>
+         <input type="radio" name="1" value='{"SP": 1, "AP": 1}'>
          <img src="/img/litt-uenig.svg">
        </label>
       <p>Litt uenig</p> 
@@ -38,14 +44,14 @@
      </div>
      <div class="option-4">
         <label>
-         <input type="radio" name="1" value='{"MDG": 2,"FRP": 2, "SP": 2}'>
+         <input type="radio" name="1" value='{"Nothing": 0}'>
          <img src="/img/litt-enig.svg">
         </label>
       <p>Litt enig</p> 
      </div>
      <div class="option-5">
        <label>
-         <input type="radio" name="1" value='{"AP": 5, "Rødt": 5, "SV": 5}'>
+         <input type="radio" name="1" value='{"MDG": 2, "SV": 2, "KRF": 2, "V": 2}'>
          <img src="/img/helt-enig.svg">
         </label>
       <p>Helt enig</p> 
@@ -59,18 +65,20 @@
     <div class="number">
      <h1>2</h1>
     </div>
-    <h2>Norsk politi må ha lov å ransake deg for å finne ut om du har narkotika til eget bruk.</h2>
+    <div class="statement"> 
+     <h2>Det er bra at de rike må betale formuesskatt</h2>
+    </div>
     <div class="options">
      <div class="option-1">
       <label>
-       <input type="radio" name="2" value='{"MDG": 3, "H": 3, "V": 3, "Rødt": 3, "SV": 3}'>
+       <input type="radio" name="2" value='{"FRP": 2, "H": 2}'>
        <img src="/img/helt-uenig.svg">
       </label>
       <p>Helt uenig</p> 
      </div>
      <div class="option-2">
       <label>
-       <input type="radio" name="2" value='{"Nothing": 0}'>
+       <input type="radio" name="2" value='{"KRF": 1, "V": 1}'>
        <img src="/img/litt-uenig.svg">
       </label>
       <p>Litt uenig</p> 
@@ -84,14 +92,14 @@
      </div>
      <div class="option-4">
       <label>
-       <input type="radio" name="2" value='{"AP": 1}'>
+       <input type="radio" name="2" value='{"SP": 1, "MDG": 1}'>
        <img src="/img/litt-enig.svg">
       </label>
       <p>Litt enig</p> 
      </div>
      <div class="option-5">
       <label>
-       <input type="radio" name="2" value='{"KRF": 4, "FRP": 4, "SP": 4}'>
+       <input type="radio" name="2" value='{"AP": 2, "SV": 2}'> 
        <img src="/img/helt-enig.svg">
       </label>
       <p>Helt enig</p> 
@@ -106,18 +114,20 @@
     <div class="number">
      <h1>3</h1>
     </div>
-    <h2>Vi kan prøve ut regulert salg av cannabis i Norge.</h2>
+    <div class="statement"> 
+     <h2>Nordmenn betaler for mye i skatter og avgifter</h2>
+    </div>
     <div class="options">
      <div class="option-1">
       <label>
-       <input type="radio" name="3" value='{"AP": 3, "H": 3, "KRF": 3, "FRP": 3, "Rødt": 3, "SV": 3, "SP": 3}'>
+       <input type="radio" name="3" value='{"SV": 2}'>
        <img src="/img/helt-uenig.svg">
       </label>
       <p>Helt uenig</p> 
      </div>
      <div class="option-2">
       <label>
-       <input type="radio" name="3" value='{"Nothing": 0}'>
+       <input type="radio" name="3" value='{"AP": 1, "MDG": 1, "KRF": 1}'>
        <img src="/img/litt-uenig.svg">
       </label>
       <p>Litt uenig</p> 
@@ -131,14 +141,14 @@
      </div>
      <div class="option-4">
        <label>
-        <input type="radio" name="3" value='{"Nothing": 0}'>
+        <input type="radio" name="3" value='{"SP": 1, "V": 1}'>
         <img src="/img/litt-enig.svg">
        </label>
       <p>Litt enig</p> 
      </div>
      <div class="option-5">
        <label>
-        <input type="radio" name="3" value='{"MDG": 2, "V": 2}'>
+        <input type="radio" name="3" value='{"H": 2, "FRP": 2}'>
         <img src="/img/helt-enig.svg">
        </label>
       <p>Helt enig</p> 
@@ -153,39 +163,41 @@
     <div class="number">
      <h1>4</h1>
     </div>
-    <h2></h2>
+    <div class="statement"> 
+     <h2>Askøy bør ikke innføre eiendomsskatt</h2>
+    </div>
     <div class="options">
      <div class="option-1">
        <label>
-        <input type="radio" name="4" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+        <input type="radio" name="4" value='{"SV": 2}'>
         <img src="/img/helt-uenig.svg">
        </label>
        <p>Helt uenig</p> 
      </div>
      <div class="option-2">
        <label>
-        <input type="radio" name="4" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+        <input type="radio" name="4" value='{"MDG": 1, "V": 1}'>
         <img src="/img/litt-uenig.svg">
        </label>
        <p>Litt uenig</p> 
      </div>
      <div class="option-3">
        <label>
-        <input type="radio" name="4" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+        <input type="radio" name="4" value='{"Nothing": 0}'>
         <img src="/img/hverken-eller.svg">
        </label>
        <p>Hverken eller</p> 
      </div>
      <div class="option-4">
        <label>
-        <input type="radio" name="4" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+        <input type="radio" name="4" value='{"KRF": 1}'>
         <img src="/img/litt-enig.svg">
        </label>
        <p>Litt enig</p> 
      </div>
      <div class="option-5">
       <label>
-       <input type="radio" name="4" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+       <input type="radio" name="4" value='{"AP": 2, "H": 2, "FRP": 2, "SP": 2}'>
        <img src="/img/helt-enig.svg">
       </label>
       <p>Helt enig</p> 
@@ -200,39 +212,41 @@
     <div class="number">
      <h1>5</h1>
     </div>
-    <h2></h2>
+    <div class="statement">
+     <h2>Bedrifter bør få drive sykehjem, renhold og annet for kommunen</h2>
+    </div>
     <div class="options">
      <div class="option-1">
       <label>
-       <input type="radio" name="5" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+       <input type="radio" name="5" value='{"AP": 2, "SV": 2, "SP": 2}'>
        <img src="/img/helt-uenig.svg">
       </label>
       <p>Helt uenig</p> 
      </div>
      <div class="option-2">
       <label>
-       <input type="radio" name="5" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+       <input type="radio" name="5" value='{"KRF": 1, "MDG": 1}'>
        <img src="/img/litt-uenig.svg">
       </label>
      <p>Litt uenig</p> 
      </div>
      <div class="option-3">
       <label>
-       <input type="radio" name="5" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+       <input type="radio" name="5" value='{"Nothing": 0}'>
        <img src="/img/hverken-eller.svg">
       </label>
      <p>Hverken eller</p> 
      </div>
      <div class="option-4">
       <label>
-       <input type="radio" name="5" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+       <input type="radio" name="5" value='{"H": 1, "V": 1}'>
        <img src="/img/litt-enig.svg">
       </label>
      <p>Litt enig</p> 
      </div>
      <div class="option-5">
       <label>
-       <input type="radio" name="5" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+       <input type="radio" name="5" value='{"FRP": 2}'>
        <img src="/img/helt-enig.svg">
       </label>
      <p>Helt enig</p> 
@@ -247,39 +261,41 @@
     <div class="number">
      <h1>6</h1>
     </div>
-    <h2></h2>
+    <div class="statement"> 
+     <h2>Norge må slutte å lete etter olje og gass</h2>
+    </div>
     <div class="options">
      <div class="option-1">
       <label>
-       <input type="radio" name="6" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+       <input type="radio" name="6" value='{"AP": 2, "H": 2, "FRP": 2, "SP": 2}'>
        <img src="/img/helt-uenig.svg">
       </label>
      <p>Helt uenig</p> 
      </div>
      <div class="option-2">
       <label>
-       <input type="radio" name="6" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+       <input type="radio" name="6" value='{"Nothing": 0}'>
        <img src="/img/litt-uenig.svg">
       </label>
      <p>Litt uenig</p> 
      </div>
      <div class="option-3">
       <label>
-       <input type="radio" name="6" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+       <input type="radio" name="6" value='{"Nothing": 0}'>
        <img src="/img/hverken-eller.svg">
       </label>
      <p>Hverken eller</p> 
      </div>
      <div class="option-4">
       <label>
-       <input type="radio" name="6" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+       <input type="radio" name="6" value='{"KRF": 1}'>
        <img src="/img/litt-enig.svg">
       </label>
      <p>Litt enig</p> 
      </div>
      <div class="option-5">
       <label>
-       <input type="radio" name="6" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+       <input type="radio" name="6" value='{"MDG": 2, "V": 2, "SV": 2}'>
        <img src="/img/helt-enig.svg">
       </label>
      <p>Helt enig</p> 
@@ -294,39 +310,41 @@
     <div class="number">
      <h1>7</h1>
     </div>
-    <h2></h2>
+    <div class="statement"> 
+     <h2>Det bør innføres parkeringsavgift på Kleppestø</h2>
+    </div>
     <div class="options">
      <div class="option-1">
       <label>
-       <input type="radio" name="7" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+       <input type="radio" name="7" value='{"SP": 2, "FRP": 2, "SV": 2}'>
        <img src="/img/helt-uenig.svg">
       </label>
      <p>Helt uenig</p> 
      </div>
      <div class="option-2">
       <label>
-       <input type="radio" name="7" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+       <input type="radio" name="7" value='{"Nothing": 0}'>
        <img src="/img/litt-uenig.svg">
       </label>
      <p>Litt uenig</p> 
      </div>
      <div class="option-3">
       <label>
-       <input type="radio" name="7" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+       <input type="radio" name="7" value='{"Nothing": 0}'>
        <img src="/img/hverken-eller.svg">
       </label>
      <p>Hverken eller</p> 
      </div>
      <div class="option-4">
       <label>
-       <input type="radio" name="7" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+       <input type="radio" name="7" value='{"AP": 2, "H": 2, "V": 2, "KRF": 2, "MDG": 2}'>
        <img src="/img/litt-enig.svg">
       </label>
      <p>Litt enig</p> 
      </div>
      <div class="option-5">
       <label>
-       <input type="radio" name="7" value='{"MDG": 0, "AP": 0, "H": 0, "V": 0, "KRF": 0, "FRP": 0, "Rødt": 0, "SV": 0, "SP": 0}'>
+       <input type="radio" name="7" value='{"Nothing": 0}'>
        <img src="/img/helt-enig.svg">
       </label>
      <p>Helt enig</p> 
@@ -341,39 +359,39 @@
     <div class="number">
      <h1>8</h1>
     </div>
-    <h2></h2>
+    <h2>Ingen skoler bør legges ned på Askøy</h2>
     <div class="options">
      <div class="option-1">
       <label>
-       <input type="radio" name="8" value="option1">
+       <input type="radio" name="8" value='{"Nothing": 0}'>
        <img src="/img/helt-uenig.svg">
       </label>
      <p>Helt uenig</p> 
      </div>
      <div class="option-2">
       <label>
-       <input type="radio" name="8" value="option2">
+       <input type="radio" name="8" value='{"V": 1}'>
        <img src="/img/litt-uenig.svg">
       </label>
      <p>Litt uenig</p> 
      </div>
      <div class="option-3">
       <label>
-       <input type="radio" name="8" value="option3">
+       <input type="radio" name="8" value='{"Nothing": 0}'>
        <img src="/img/hverken-eller.svg">
       </label>
      <p>Hverken eller</p> 
      </div>
      <div class="option-4">
       <label>
-       <input type="radio" name="8" value="option4">
+       <input type="radio" name="8" value='{"H": 1}'>
        <img src="/img/litt-enig.svg">
       </label>
      <p>Litt enig</p> 
      </div>
      <div class="option-5">
       <label>
-       <input type="radio" name="8" value="option5">
+       <input type="radio" name="8" value='{"AP": 2, "SP": 2, "FRP": 2, "MDG": 2, "SV": 2, "KRF": 2}'>
        <img src="/img/helt-enig.svg">
       </label>
      <p>Helt enig</p> 
@@ -388,39 +406,41 @@
     <div class="number">
      <h1>9</h1>
     </div>
-    <h2></h2>
+    <div class="statement"> 
+     <h2>Det bør være et helsepolitisk mål å få nordmenn til å spise mindre kjøtt</h2>
+    </div>
     <div class="options">
      <div class="option-1">
       <label>
-       <input type="radio" name="9" value="option1">
+       <input type="radio" name="9" value='{"SP": 2, "FRP": 2}'>
        <img src="/img/helt-uenig.svg">
       </label>
      <p>Helt uenig</p> 
      </div>
      <div class="option-2">
       <label>
-       <input type="radio" name="9" value="option2">
+       <input type="radio" name="9" value='{"AP": 1, "H": 1, "KRF": 1}'>
        <img src="/img/litt-uenig.svg">
       </label>
      <p>Litt uenig</p> 
      </div>
      <div class="option-3">
       <label>
-       <input type="radio" name="9" value="option3">
+       <input type="radio" name="9" value='{"Nothing": 0}'>
        <img src="/img/hverken-eller.svg">
       </label>
      <p>Hverken eller</p> 
      </div>
      <div class="option-4">
       <label>
-       <input type="radio" name="9" value="option4">
+       <input type="radio" name="9" value='{"SV": 1}'>
        <img src="/img/litt-enig.svg">
       </label>
      <p>Litt enig</p> 
      </div>
      <div class="option-5">
       <label>
-       <input type="radio" name="9" value="option5">
+       <input type="radio" name="9" value='{"MDG": 2, "V": 2}'>
        <img src="/img/helt-enig.svg">
       </label>
      <p>Helt enig</p> 
@@ -435,39 +455,39 @@
     <div class="number">
      <h1>10</h1>
     </div>
-    <h2></h2>
+     <h2>Kleppestø må bygges ut som sentrum</h2>
     <div class="options">
      <div class="option-1">
       <label>
-       <input type="radio" name="10" value="option1">
+       <input type="radio" name="10" value='{"SP": 2}'>
        <img src="/img/helt-uenig.svg">
       </label>
      <p>Helt uenig</p> 
      </div>
      <div class="option-2">
       <label>
-       <input type="radio" name="10" value="option2">
+       <input type="radio" name="10" value='{"Nothing": 0}'>
        <img src="/img/litt-uenig.svg">
       </label>
      <p>Litt uenig</p> 
      </div>
      <div class="option-3">
       <label>
-       <input type="radio" name="10" value="option3">
+       <input type="radio" name="10" value='{"Nothing": 0}'>
        <img src="/img/hverken-eller.svg">
       </label>
      <p>Hverken eller</p> 
      </div>
      <div class="option-4">
       <label>
-       <input type="radio" name="10" value="option4">
+       <input type="radio" name="10" value='{"Nothing": 0}'>
        <img src="/img/litt-enig.svg">
       </label>
      <p>Litt enig</p> 
      </div>
      <div class="option-5">
       <label>
-       <input type="radio" name="10" value="option5">
+       <input type="radio" name="10" value='{"AP": 2, "H": 2, "FRP": 2, "MDG": 2, "SV: 2, "KRF": 2, "V": 2}'>
        <img src="/img/helt-enig.svg">
       </label>
      <p>Helt enig</p> 
@@ -475,10 +495,13 @@
     </div>
     <div class="buttons"> 
      <button id="previous-button" onclick="previous()">Tilbake</button>
-     <button id="next-button-10" onclick="next()" style="display: none;"  disabled>Fullfør</button>
+     <button id="next-button-10" onclick="results()" style="display: none;" disabled>Fullfør</button>
     </div>
    </div>
   </div> 
+  <div class="results" style="display: none;">
+    <img src="/img/background.gif" alt="">
+  </div>
  </div>  
   <script src="/javascript/main.js"></script>
 </body>
