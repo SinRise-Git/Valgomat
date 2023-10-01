@@ -27,7 +27,7 @@ function next() {
       partyScore[party] += selectedValueObject[party];
     }
   }
-  if (currentQuestion <= 10) {
+  if (currentQuestion <= questionAmount) {
     document.querySelector(`.question-${currentQuestion}`).style.display = 'none';
     currentQuestion++;
     document.querySelector(`.question-${currentQuestion}`).style.display = 'block';
