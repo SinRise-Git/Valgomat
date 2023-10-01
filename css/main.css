@@ -1,10 +1,6 @@
 body{
     background: black;
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
+    font-family: 'Inter', sans-serif;
 }
 .box{
     border: 2px solid white;
@@ -31,7 +27,7 @@ body{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-color: transparent;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 }
 
 
@@ -58,7 +54,6 @@ body{
     display: flex;
     align-items: center; 
     justify-content: center; 
- 
     background-size: 400% 400%;
    
 }
@@ -109,7 +104,7 @@ img{
 .options{
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 15px;
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
@@ -128,9 +123,9 @@ h1{
     background: transparent;
     width: 35px;
     height: 35px;
-   text-align: center;
+    text-align: center;
     font-size: 1.8rem;
-    font-weight: 900;
+    font-weight: 10;
     color: #fff;
     border-radius: 25px;
 
@@ -138,8 +133,8 @@ h1{
 
 h2{
     margin: 0px;
+    color: white;
     text-align: center;
-    font-family: Inter var;
     font-weight: 400;
     font-size: 2rem;
     max-width: 500px;
@@ -176,7 +171,6 @@ p{
     border-radius: 5px;
     cursor: pointer;
     backdrop-filter: blur(10px);
-    font-family: 'Lato', sans-serif;
     text-decoration: none;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
@@ -197,9 +191,9 @@ p{
     font-family: 'Lato', sans-serif;
     text-decoration: none;
 
-  }
+}
   
-  #previous-button::before {
+#previous-button::before {
     content: "";
     position: absolute;
     top: 0;
@@ -211,9 +205,8 @@ p{
     background-position: right 10px center;
     transform: rotate(180deg); 
     
-  }
+}
   
- 
 button:hover {
     backdrop-filter: blur(10px);
 }
@@ -250,4 +243,33 @@ button:hover::after {
     width: 40%;
 }
 
+h3{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin: 10px 0px 0px 0px;
+}
 
+h4{
+    color: white;
+    font-size: large;
+    font-size: 25px;
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+}
+
+.winners{
+   display: grid;
+   align-items: center; 
+   justify-content: center; 
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px ;
+   padding-bottom: 30px;
+
+}
+
+p{
+   color: white;
+   text-align: center;
+   font-family: 'Inter', sans-serif;
+}

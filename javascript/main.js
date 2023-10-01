@@ -67,7 +67,15 @@ radioButtons.forEach(function (radioButton) {
 function results(){
    document.querySelector(`.question-${currentQuestion}`).style.display = 'none';
    document.querySelector(`.questions`).style.display = 'none';
+   document.querySelector(`.results`).style.display = 'block';
+
    progress(10)
+   const sorted = Object.entries(partyScore).sort((a, b) => b[1] - a[1]);
+   const sortedParty = Object.fromEntries(sorted);
+   const keys = Object.keys(sortedParty);
+   const firstValue = sortedParty[keys[1]]
+   console.log(firstValue)
+   
 }
 
 function progress(state){
