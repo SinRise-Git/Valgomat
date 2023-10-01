@@ -81,14 +81,17 @@ function results(){
 function progress(state){
   if (currentProgress < 100 ){
     if (state == 10){
-      currentProgress += (100 / questionAmount) - 0.065;
+      currentProgress += (100 / questionAmount) - 0.090;
       currentAmount +=  (100 / questionAmount)
     }
     else if (state == -10){
-      currentProgress -= (100 / questionAmount) - 0.065;
+      currentProgress -= (100 / questionAmount) - 0.090;
       currentAmount -=  (100 / questionAmount)
     }
     progressBar.style.width = currentProgress + '%';
     progressBar.innerText = currentAmount + '%';
   }
 }
+
+
+
