@@ -2,6 +2,9 @@ let currentQuestion = 1;
 let questionAmount = 10;
 let currentProgress = 0;
 let currentAmount = 0
+let valueP = 0
+let procent = 0
+
 
 let partyScore ={
   MDG: 0,  
@@ -14,6 +17,18 @@ let partyScore ={
   SV: 0,
   SP: 0,
   Nothing: 0,
+}
+
+let partyColors = {
+  MDG: "#548208",  
+  AP: "#E12734",
+  H: "#085695",
+  V: "#086B6B",
+  KRF: "#FF443D",
+  FRP: "#CA3035",
+  Rødt: "#CA3035",
+  SV: "#539760",
+  SP: "#088843",
 }
 
 const progressBar = document.getElementById('progress');
@@ -68,13 +83,26 @@ function results(){
    document.querySelector(`.question-${currentQuestion}`).style.display = 'none';
    document.querySelector(`.questions`).style.display = 'none';
    document.querySelector(`.results`).style.display = 'block';
-
    progress(10)
    const sorted = Object.entries(partyScore).sort((a, b) => b[1] - a[1]);
    const sortedParty = Object.fromEntries(sorted);
    const keys = Object.keys(sortedParty);
-   const firstValue = sortedParty[keys[1]]
-   console.log(firstValue)
+   for(let i = 1; i <= 10; i++){
+    valueP += sortedParty[keys[i-1]]
+   }
+   for(let i = 1; i <= 4; i++){
+    const partyPlace = document.getElementById(`party-${i}-text`);
+    const valuePlace = document.getElementById(`party-${i}-score-text`);
+    const valueProcent = document.getElementById(`party-${i}-prosent-text`);
+    const firstValue = sortedParty[keys[i-1]]
+    const firstParty = keys[i-1]
+    const partyColor = partyColors[firstParty];
+    procent = (firstValue / valueP) * 100
+    partyPlace.style.color = partyColor
+    partyPlace.textContent = firstParty
+    valuePlace.textContent = firstValue    
+    valueProcent.textContent = procent.toFixed(1) + "%"
+  }
    
 }
 

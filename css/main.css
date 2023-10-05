@@ -1,33 +1,22 @@
 body{
-    background: black;
+    background: lightcyan;
     font-family: 'Inter', sans-serif;
 }
 .box{
-    border: 2px solid white;
+    border: 2px solid #2E2523;
     border-radius: 5px;
-    background: linear-gradient(-45deg, #121212, #222222, #222222, #121212);
+    background-color: #1D1918;
+    backdrop-filter: blur(10px);
     background-size: 400% 400%;
     animation: gradient 10s ease-in-out infinite;
 }
-    @keyframes gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-}
-
-
+   
 #progress-container {
     width: 550px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background-color: transparent;
-    border-bottom: 2px solid white;
+    color:  #1D1918;
+    border-bottom: 2px solid #2E2523;
 }
 
 
@@ -38,7 +27,8 @@ body{
     text-align: center;
     line-height: 30px;
     color:  white;
-    background: linear-gradient(-45deg, #121212, #222222, #222222, #121212);;
+    background-color: #2E2523;
+    font-weight: bold;
     border-radius: 5px;
     transition: width 0.5s ease-in-out; 
     
@@ -55,7 +45,6 @@ body{
     align-items: center; 
     justify-content: center; 
     background-size: 400% 400%;
-   
 }
 
 .box{
@@ -63,6 +52,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
+    box-shadow: 1px 1px 1px white;
 }
 
 [type=radio] { 
@@ -89,8 +79,8 @@ label{
 
 }
 
-img{
-    opacity: 0.3;
+.questions img{
+    opacity: 0.4;
 }
 
 [type=radio]:hover + img{
@@ -121,8 +111,9 @@ img{
 h1{
     border: solid white 2px;
     background: transparent;
-    width: 35px;
-    height: 35px;
+    width: 37px;
+    height: 37px;
+    line-height: 37px;
     text-align: center;
     font-size: 1.8rem;
     font-weight: 10;
@@ -135,7 +126,7 @@ h2{
     margin: 0px;
     color: white;
     text-align: center;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 2rem;
     max-width: 500px;
 }
@@ -272,4 +263,7 @@ p{
    color: white;
    text-align: center;
    font-family: 'Inter', sans-serif;
+   font-weight: bold;
 }
+
+
